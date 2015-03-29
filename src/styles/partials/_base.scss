@@ -1,0 +1,51 @@
+.mainDiv{
+	position: absolute;
+	top: 80px;
+	left: 220px;
+	height: 630px;
+	width: 900px;
+}
+
+.imgBlock{
+	display: block;
+	float: left;
+}
+
+.bower{
+	position: relative;
+	span{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 70px;
+		left: 40px;
+	}
+}
+
+.gulp{
+	position: relative;
+	span{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 180px;
+		left: 50px;
+	}
+}
+
+.angular{
+	position: relative;
+	span{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+}
+
+.foo{
+	height: 100px;
+	width: 300px;
+	background-color: #000000;
+}

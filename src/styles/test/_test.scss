@@ -1,0 +1,164 @@
+
+
+$main-color:black;
+$radius:20px;
+
+
+@mixin rounded($radius:5px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+	border: 5px solid $main-color;
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+}
+
+
+.specialDiv{
+	@include rounded(20px);
+	padding: 10px;
+}
+
+.rounded{
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+	border: 5px solid #000000;
+}
+
+.header{
+	@extend .rounded;
+	position: absolute;
+	top: 10px;
+	left: 220px;
+	width: 900px;
+	height: 60px;
+	background-color: ghostwhite;
+}
+
+.sidebar{
+	@extend .rounded;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 700px;
+	width: 200px;
+	background-color: ghostwhite;
+}
+
+.screenDiv{
+	@extend .rounded;
+	position: absolute;
+	height: 730px;
+	width:1150px;
+	top:5%;
+	left:10%;
+	background-color: #708090;
+}
+
+.buttonBar{
+	position:absolute;
+	width: 100px;
+	top:100px;
+	left:20px;
+	height:10em;
+	margin-top:-5em
+}
+
+.hSpace{
+	height: 20px;
+}
+
+.mainView{
+	background-color: #ffffff;
+}
+
+.titlePos{
+	position:absolute;
+	top:-15px;
+	left:50px;
+}
+
+.parentDiv{
+	text-align: center;
+}
+
+.bizCard{
+	border: 2px solid #000000;
+	width:280px;
+	height:600px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-300px 0 0 -140px;
+}
+
+.top{
+	height: 200px;
+	width: 100%;
+	background-color: #646d3e;
+	border-bottom: solid #000000 15px;
+	&:hover {
+		background-color: #b78e3f;
+	}
+}
+.middle{
+	height: 120px;
+	width: 100%;
+	background-color: #FEFBE0;
+}
+.bottom{
+	height: 250px;
+	width: 100%;
+	background-color: #b78e3f;
+	border-top: solid #000000 15px;
+	&:hover {
+		background-color: #646d3e;
+	}
+}
+
+.circleC {
+	position: absolute;
+	top: 130px;
+	left: 70px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	-moz-border-radius: 50%; /* Firefox */
+	border:solid #000000 15px;
+	width: 120px;
+	height: 120px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circleR{
+	position: absolute;
+	top: 142px;
+	left: 84px;
+	width: 124px;
+	height: 124px;
+	background-color: #ce3d3a;
+	-webkit-border-radius: 62px; /* Safari, Chrome */
+	-moz-border-radius: 62px; /* Firefox */
+	border-radius: 62px; /* CSS3 */
+	&:hover {
+		background-color: #FF7A00;
+	}
+}
+
+.capC{
+	position: absolute;
+	top: 163px;
+	left: 104px;
+	width: 124px;
+	height: 124px;
+	background-repeat: no-repeat;
+	background-image: url('../../images/capc.png');
+}
+
+
+
+
+

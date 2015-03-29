@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../bower_components/components-font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../build/styles/css/main.min.css">
+
+</head>
+<body>
+
+
+	<div class="screenDiv">
+		<div ng-controller="MainCtrl" class="specialDiv header">
+			<h1 class="titlePos">Android, Angular, AppEngine & other Adventures</h1>
+		</div>
+		<div ui-view="main"></div>
+		<div ui-view="sidebar"></div>
+	</div>
+
+	<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../bower_components/angularjs/angular.min.js"></script>
+	<script src="../../bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
+	<script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+   <!--<script src="../../src/scripts/app.js"></script>-->
+
+	<script src="../../build/scripts/main.min.js"></script>
+
+</body>
+</html>
