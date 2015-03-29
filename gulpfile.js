@@ -78,3 +78,6 @@ gulp.task('watch', function() {
 // default gulp task
 gulp.task('default', ['jshint','scripts','styles','sass','htmlpage','images','watch']);
 
+
+
+
