@@ -14,11 +14,11 @@
 <body>
        <div class="parentDiv" ng-controller="BizCardCtrl">
 		   <div class="bizCard">
-				<div class="top"></div>
-				<div class="middle"></div>
-				<div class="bottom"></div>
+				<div class="top slideUp" ng-mouseover="mouseOver('top')"></div>
+				<div class="middle" ng-mouseover="mouseOver('middle')"></div>
+				<div class="bottom" ng-mouseover="mouseOver('bottom')"></div>
 				<div class="circleC"></div>
-				<div class="circleR"></div>
+				<div class="circleR"ng-mouseover="mouseOver('redDot')"></div>
 				<div class="capC"></div>
 		   </div>
        </div>
