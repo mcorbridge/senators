@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <link rel="shortcut icon" href="http://faviconist.com/icons/998abf70db8c3869aeea7dccbb570da5/favicon.ico" />
-<html ng-app="app">
+<html ng-app="home">
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>mcorbridge</title>
@@ -14,7 +14,7 @@
 <body>
        <div class="parentDiv" ng-controller="BizCardCtrl">
 		   <div class="bizCard">
-				<div class="top slideUp" ng-mouseover="mouseOver('top')"></div>
+				<div class="top" ng-mouseover="mouseOver('top')"></div>
 				<div class="middle" ng-mouseover="mouseOver('middle')"></div>
 				<div class="bottom" ng-mouseover="mouseOver('bottom')"></div>
 				<div class="circleC"></div>
@@ -23,14 +23,19 @@
 		   </div>
        </div>
 
-	   <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-	   <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	   <script src="../../bower_components/angularjs/angular.min.js"></script>
-	   <script src="../../bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
-	   <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-		<!--<script src="../../src/scripts/app.js"></script>-->
-		<script src="../../build/scripts/main.min.js"></script>
+
+		<script  src="https://code.angularjs.org/1.2.21/angular.js"></script>
+	   <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+	   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+		<script src="../../bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
+		<script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+		<script src="../../src/scripts/home.js"></script>
+		<!--<script src="../../build/scripts/main.min.js"></script>-->
 
 </body>
 </html>
